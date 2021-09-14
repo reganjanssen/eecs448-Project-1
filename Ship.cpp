@@ -11,7 +11,8 @@ Ship::Ship()
 Ship::~Ship(){}
 
 void Ship::placeShip()
-{
+{ 
+  ship= new array [] [] ; 
   m_isShip = false;
   for{int row=0; row<=9;row++}
   {

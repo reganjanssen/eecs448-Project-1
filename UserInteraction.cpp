@@ -40,10 +40,11 @@ void UserInteraction::playGame()
           //set each ship  
           //if()
           cout << "Player 1 where you like to set your ship " + k  "input your col and row" ;
-          //check ver
+          //check is
       }
       //after set player 1 and then go to player 2 
       
+
 
 
 

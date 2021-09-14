@@ -9,11 +9,15 @@ class Ship
   public:
     Ship();
     ~Ship();
+
+    bool isSunk(); //returns true if the ship is fully sunk. used for other classes to check ship
+    void hitShip();//marks an empty spot of the array as hit
+
+  private:
     int ship_size; //size of ship and array
     int* ship_arr; //pointer to the array of the selected ship size.
-    bool isSunk; //keeps track of if the ship is sunk
+    bool isFull; //keeps track of if the array is full
 
-    void hitShip();//marks an empty spot of the array as hit
 };
 
 #endif

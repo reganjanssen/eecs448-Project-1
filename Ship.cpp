@@ -8,10 +8,7 @@ Ship::Ship(int size)
 
 Ship::~Ship(){}
 
-bool Ship::isSunk()
-{
 
-}
 
 void Ship::hitShip()
 {
@@ -20,6 +17,10 @@ void Ship::hitShip()
     if(ship_arr[i] != 1)
     {
       ship_arr[i] = 1;
+      if(i == ship_size)
+      {
+        isSunk = true;
+      }
     }
   }
 }

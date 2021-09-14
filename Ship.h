@@ -10,12 +10,10 @@ class Ship
     Ship();
     ~Ship();
     int ship_size; //size of ship and array
-    char* ship_arr;
+    int* ship_arr; //pointer to the array of the selected ship size.
 
-    bool m_isShip; // does this coordinate contain a ship
     bool m_hasBeenHit; // has this spot been hit
-    bool m_isHorizontal; // horizontal or vertical placement
-
+    bool Ship::isSunk()
     void placeShip();
     void hitShip();
     void makeVertical();

@@ -1,11 +1,9 @@
 #include "Ship.h"
 
-Ship::Ship()
+Ship::Ship(int size)
 {
-  gridChar = '_';
-  m_isShip = false;
-  m_hasBeenHit = false;
-  m_isHorizontal = true;
+  ship_size = size;
+  ship_arr = new char[size];
 }
 
 Ship::~Ship(){}

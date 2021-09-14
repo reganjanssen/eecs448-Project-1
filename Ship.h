@@ -9,8 +9,8 @@ class Ship
   public:
     Ship();
     ~Ship();
-
-    char gridChar;
+    int ship_size; //size of ship and array
+    char* ship_arr;
 
     bool m_isShip; // does this coordinate contain a ship
     bool m_hasBeenHit; // has this spot been hit

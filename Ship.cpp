@@ -6,7 +6,10 @@ Ship::Ship(int size)
   ship_arr = new int[size];
 }
 
-Ship::~Ship(){}
+Ship::~Ship()
+{
+  delete [] ship_arr;
+}
 
 
 
@@ -19,8 +22,16 @@ void Ship::hitShip()
       ship_arr[i] = 1;
       if(i == ship_size)
       {
-        isSunk = true;
+        isFull = true;
       }
     }
+  }
+}
+
+bool Ship::isSunk()
+{
+  if(isFull == true)
+  {
+    return(true);
   }
 }

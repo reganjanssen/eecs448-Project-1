@@ -7,8 +7,8 @@ using namespace std;
 class Ship
 {
   public:
-    Ship();
-    ~Ship();
+    Ship(int size);//creates a ship with size input, containing ship_size and ship_arr
+    ~Ship();//deletes array and ship
 
     bool isSunk(); //returns true if the ship is fully sunk. used for other classes to check ship
     void hitShip();//marks an empty spot of the array as hit
